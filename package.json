@@ -3,7 +3,7 @@
   "displayName": "quicklogz",
   "publisher": "navyasree30",
   "description": "quick logs for dev",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "quicklogz.png",
   "engines": {
     "vscode": "^1.80.0"
@@ -45,6 +45,11 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navyasrees/quicklogz"
+  },
+  "license": "MIT",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
