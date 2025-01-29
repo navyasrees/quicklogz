@@ -1,9 +1,10 @@
 {
-  "name": "quicklog",
-  "displayName": "quicklog",
+  "name": "quicklogz",
+  "displayName": "quicklogz",
   "publisher": "navyasree30",
   "description": "quick logs for dev",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "icon": "quicklogz.png",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -32,13 +33,13 @@
     "keybindings": [
       {
         "command": "LogHelper.addLog",
-        "key": "cmd+/",
+        "key": "ctrl+/",
         "mac": "cmd+/",
         "when": "editorTextFocus"
       },
       {
         "command": "LogHelper.addLogBeforeVariable",
-        "key": "cmd+-",
+        "key": "ctrl+-",
         "mac": "cmd+-",
         "when": "editorTextFocus"
       }
