@@ -1,0 +1,70 @@
+{
+  "name": "quicklog",
+  "displayName": "quicklog",
+  "publisher": "navyasree30",
+  "description": "quick logs for dev",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "quicklog.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "LogHelper.addLog",
+        "title": "Insert Log",
+        "category": "Code Actions"
+      },
+      {
+        "command": "LogHelper.addLogBeforeVariable",
+        "title": "Insert log before variable",
+        "category": "Code Actions"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "LogHelper.addLog",
+        "key": "cmd+/",
+        "mac": "cmd+/",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "LogHelper.addLogBeforeVariable",
+        "key": "cmd+-",
+        "mac": "cmd+-",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "~20.17.16",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "openai": "^4.80.1"
+  }
+}
