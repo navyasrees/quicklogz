@@ -2,8 +2,8 @@
   "name": "quicklogz",
   "displayName": "quicklogz",
   "publisher": "navyasree30",
-  "description": "quick logs for dev",
-  "version": "1.0.3",
+  "description": "quick logs for develeopment",
+  "version": "1.0.4",
   "icon": "quicklogz.png",
   "engines": {
     "vscode": "^1.80.0"

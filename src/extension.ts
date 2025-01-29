@@ -2,7 +2,9 @@ import * as vscode from "vscode";
 
 const logFormats: Record<string, (varName: string) => string> = {
   javascript: (varName) => `console.log("${varName}: ", ${varName});`,
+  javascriptreact: (varName) => `console.log("${varName}: ", ${varName});`,
   typescript: (varName) => `console.log("${varName}: ", ${varName});`,
+  typescriptreact: (varName) => `console.log("${varName}: ", ${varName});`,
   python: (varName) => `print(f"${varName}: {${varName}}")`,
   java: (varName) => `System.out.println("${varName}: " + ${varName});`,
   csharp: (varName) => `Console.WriteLine("${varName}: " + ${varName});`,
